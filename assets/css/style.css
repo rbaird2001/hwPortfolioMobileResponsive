@@ -37,10 +37,10 @@ hr{
     /* width: 100%; */
 }
 
-.flex-row > div{
+/* .flex-row > div{
     padding: 5px;
     margin:10px;
-}
+} */
 
 .float-left{
     float: left;
@@ -51,10 +51,10 @@ hr{
     flex-direction: column;
 }
 
-.flex-col > div{
+/* .flex-col > div{
     padding: 5px;
     margin: 10px;
-}
+} */
 
 .flex-inline{
     display: inline-flex
@@ -99,7 +99,7 @@ hr{
 .bg-head-pri{
     background-color: #6B735A;
     border-color: #26201D;
-    border-style: solid;
+    border-style: none;
     border-width: .10rem;
 }
 
@@ -212,6 +212,11 @@ hr{
     margin-right: 4rem;
 }
 
+.galleryImgContainer::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 /* Color Theme Swatches in Hex */
  
 .Architecture-1-hex { color: #6B735A; }
@@ -221,25 +226,56 @@ hr{
 .Architecture-5-hex { color: #BF584E; }
  
 
-/* For mobile phones: */
+/* Size default for mobile. 
+Items below have a corresponding
+resizing for desktop */
 [class*="col-"] {
     width: 65%;
     margin-left: 2em;
     margin-right: 2em;
-  }
-  
+  } 
   .containerImageTextWrapped {
     display: flex;
     flex-wrap: wrap;
 }
-
 .linkList li{
     font-size: 1.5rem;
     display: block;
     list-style-type: none;
 }
-    /* For desktop: */
+.galleryImgContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.galleryImage{
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+/* Resising for desktop: */
 @media only screen and (min-width: 768px) {
+    .containerImageTextWrapped {
+        display: block;
+    }
+    html {background-image: url(../images/paper-4182513_1920.jpg);
+        background-size: cover;
+    } 
+    .linkList li{
+        font-size: 2rem;
+        display: inline;
+        list-style-type: none;
+    }
+    .galleryImgContainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 850px;
+    }
+    .galleryImage{
+        height: 400px;
+        width: 400px;
+        margin: 10px;
+    }
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -253,16 +289,4 @@ hr{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
     .mx-0 {margin-left: 0px;}
-    .containerImageTextWrapped {
-        display: block;
-    }
-    html {background-image: url(../images/paper-4182513_1920.jpg);
-        background-size: cover;
-    } 
-
-    .linkList li{
-        font-size: 2rem;
-        display: inline;
-        list-style-type: none;
-    }
 }
