@@ -1,0 +1,70 @@
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mainHeading {
+    display: grid;
+    width: 100%;
+    height: 150px;
+    grid-template-areas: "bar-t bar-t bar-t bar-t"
+                        "buf-l con-l con-r buf-r"
+                        "bar-b bar-b bar-b bar-b";
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: 15% 1fr 1.5fr 15%;
+
+}
+
+#mainHeading > .top{
+    grid-area: bar-t;
+}
+
+#mainHeading > .bottom{
+    grid-area: bar-b;
+}
+
+#mainHeading > .buffer-l{
+    grid-area: buf-l;
+}
+
+#mainHeading > .buffer-r{
+    grid-area: buf-r;
+}
+
+#mainHeading > .content-l{
+    grid-area: con-l;
+}
+
+#mainHeading > .content-r{
+    grid-area: con-r;
+}
+
+#contentArea {
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-areas: "buff-l bar-t buff-r"
+                        "buff-l cont buff-r";
+    grid-template-rows: 30px 1fr;
+    grid-template-columns: 15% 1fr 15%;
+}
+
+#contentArea > .top{
+    grid-area: bar-t
+}
+
+#contentArea > .buffer-l{
+    grid-area: buff-l;
+}
+
+#contentArea > .buffer-r{
+    grid-area: buff-r
+}
+
+#contentArea > .content-l{
+    grid-area: cont
+}
