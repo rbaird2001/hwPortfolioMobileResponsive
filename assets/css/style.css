@@ -212,6 +212,38 @@ hr{
     margin-right: 4rem;
 }
 
+.formContainer{
+    border-style: solid;
+    border-color: #A6978F;
+    border-width: 1px;
+    font-size: 2em;
+}
+
+.formLabel{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+
+.formTextIn{
+    width: 95%;
+    margin-top: 8px;
+    margin-left: 10px;
+    background-color: #A6978F;
+}
+
+.formMultilineIn{
+    margin-top: 8px;
+    margin-left: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 95%;
+    max-width: 95%;
+    background-color: #A6978F;
+}
+
 .galleryImgContainer::after {
     content: "";
     clear: both;
@@ -275,6 +307,23 @@ resizing for desktop */
         height: 400px;
         width: 400px;
         margin: 10px;
+    }
+    .formTextIn{
+        width: 95%;
+        margin-top: 8px;
+        margin-left: 10px;
+        background-color: antiquewhite;
+    }
+    
+    .formMultilineIn{
+        margin-top: 8px;
+        margin-left: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 95%;
+        max-width: 95%;
+        background-color: antiquewhite;
     }
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
