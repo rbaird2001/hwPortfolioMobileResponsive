@@ -227,7 +227,7 @@ hr{
 
 
 .formTextIn{
-    width: 95%;
+    width: 90%;
     margin-top: 8px;
     margin-left: 10px;
     background-color: #A6978F;
@@ -239,8 +239,8 @@ hr{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 95%;
-    max-width: 95%;
+    width: 90%;
+    max-width: 91%;
     background-color: #A6978F;
 }
 
@@ -309,7 +309,7 @@ resizing for desktop */
         margin: 10px;
     }
     .formTextIn{
-        width: 95%;
+        width: 93%;
         margin-top: 8px;
         margin-left: 10px;
         background-color: antiquewhite;
